@@ -31,7 +31,7 @@ const random = ()=> {
 
 } 
 const [rows,setrows] = useState (init_snake);
-const [snake,setsnake] = useState ([{x:0,y:0,},{x:1,y:0}])
+const [snake,setsnake] = useState ([{x:0,y:0},{x:1,y:0}])
 const [dir,setdir] = useState ("right")
 const [food,setfood] = useState (random)
 function useInterval(callback, delay ) {
