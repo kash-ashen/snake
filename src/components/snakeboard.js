@@ -113,9 +113,9 @@ const changedir = e => {
     }
 }
 document.addEventListener("keydown",changedir,false)
-useInterval(move_snake,100)
+useInterval(move_snake,250)
 const display_snake = () => {
-    const newrows = rows;
+    const newrows = init_snake;
     snake.forEach (cell => {
 
         newrows [cell.x][cell.y] = "snake"
